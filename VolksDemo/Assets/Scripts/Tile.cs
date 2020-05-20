@@ -7,16 +7,19 @@ public class Tile
     public enum TileTypes
     {
         TILE_START = 0,
-        TILE_BOMB = 1,
-        TILE_DICE = 2,
-        TILE_REWARD = 3,
-        TILE_SWITCH = 4,
-        TILE_CATCHCOINS = 5,
-        TILE_GUESSBOX = 6,
-        TILE_BOXREWARD_1 = 7,
-        TILE_BOXREWARD_2 = 8,
-        TILE_CUP = 9,
-        TILE_BOSS = 10,
+        TILE_BOXREWARD_1 = 1,
+        TILE_BOXREWARD_2 = 2,
+        TILE_CUP = 3,
+        TILE_BOSS = 4,
+        TILE_SWITCH = 5,
+
+        TILE_BOMB = 6,
+        TILE_DICE = 7,
+        TILE_REWARD = 8,
+
+        TILE_CATCHCOINS = 9,
+        TILE_GUESSBOX = 10,
+
         TILE_APPLE = 11,
         TILE_BUG = 12,
         TILE_FOOD = 13,
@@ -31,8 +34,10 @@ public class Tile
     public Tile Left; // 当没有其他的时，其为下一个
     public Tile Right;
 
+    public GM inGM;
+
    
-    public void InitTile(TileTypes TypeIn, GameObject MapStart, int StageIn)
+    public void InitTile(TileTypes TypeIn, GameObject MapStart, int StageIn, GM GMIn)
     {
         Type = TypeIn;
         Stage = StageIn;
@@ -40,6 +45,8 @@ public class Tile
         Pre = null;
         Left = null;
         Right = null;
+
+        inGM = GMIn;
     }
 
 }

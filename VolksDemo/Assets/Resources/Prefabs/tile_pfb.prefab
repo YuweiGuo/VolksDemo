@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6173120914077152493}
   - component: {fileID: 570841516181088346}
   - component: {fileID: 3208460370577398228}
+  - component: {fileID: 2317474069606602261}
   m_Layer: 5
   m_Name: tile_pfb
   m_TagString: Untagged
@@ -74,3 +75,15 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &2317474069606602261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453136043026040271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02bdb68e23b4314098fefd041f0cd8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

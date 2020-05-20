@@ -6,6 +6,16 @@ TagManager:
   tags:
   - mapstart
   - mapcanvas
+  - mapcamera
+  - UICanvas
+  - PopCanvas
+  - AllCups
+  - PoPBlackBG
+  - FullRank
+  - TileEvent
+  - dice1
+  - dice2
+  - dice3
   layers:
   - Default
   - TransparentFX

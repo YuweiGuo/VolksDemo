@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\1\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\1\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_VolksDemo.492264340.00" t="ExcludeRecursive" />
+    <e p="D:\VolksDemoGit\VolksDemo\VolksDemo" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Dice2Click.cs" t="Include" />
+        <e p="GetrewardClick.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="ChooseBoxClick.cs" t="Include" />
+          <e p="CloseCups.cs" t="Include" />
+          <e p="CloseRank.cs" t="Include" />
+          <e p="CollectGameClick.cs" t="Include" />
+          <e p="CupClick.cs" t="Include" />
+          <e p="Dice1Click.cs" t="Include" />
+          <e p="GM.cs" t="Include" />
+          <e p="LocateClick.cs" t="Include" />
+          <e p="Map.cs" t="Include" />
+          <e p="MapController.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="RankClick.cs" t="Include" />
+          <e p="RollADice.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+          <e p="TileManager.cs" t="Include" />
+          <e p="TileResouces.cs" t="Include" />
+          <e p="Tools.cs" t="Include" />
+          <e p="WordGameClick.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="VolksDemo.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

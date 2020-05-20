@@ -15,16 +15,16 @@ public class Player : MonoBehaviour
     {
         // 初始化
         Position = StartPosition;
-        PlayerPfb = Instantiate(Tools.FindPfbPerName("tile_pfb"), GameObject.FindGameObjectWithTag("mapcanvas").transform) as GameObject;
+        PlayerPfb = Instantiate(Tools.FindPfbPerName("tile_pfb"), GameObject.FindGameObjectWithTag("mapstart").transform) as GameObject;
         PlayerPfb.SetActive(false);
         Sprite spr = Tools.FindSpritePerName("player");
         Tools.SetObjAndSprSameSize(PlayerPfb, spr);
         PlayerPfb.GetComponent<Image>().sprite = spr;
 
         // 设置位置
-        PlayerPfb.GetComponent<Transform>().position =
-            new Vector2(Position.TilePfb.GetComponent<Transform>().position.x,
-            Position.TilePfb.GetComponent<Transform>().position.y + YShift);
+        PlayerPfb.GetComponent<Transform>().localPosition =
+            new Vector2(Position.TilePfb.GetComponent<Transform>().localPosition.x,
+            Position.TilePfb.GetComponent<Transform>().localPosition.y + YShift);
     }
 
     public void ShowPlayer()
@@ -34,9 +34,11 @@ public class Player : MonoBehaviour
     public void GoForward()
     {
         Position = Position.Left;
+        //动画
     }
     public void GoBack()
     {
         Position = Position.Pre;
+        //动画
     }
 }
