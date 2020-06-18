@@ -63,20 +63,31 @@ public class GM : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BackFromGame()
     {
-        if(BackFromWord == 1)
+        RewardRecorder++;
+        if (RewardRecorder == 3)
         {
-            if (RewardRecorder == 3)
-            {
-                RewardRecorder = 0;
-                StartCoroutine(RewardAnimation());
-            }
+            RewardRecorder = 0;
+            StartCoroutine(RewardAnimation());
         }
-
-        BackFromWord = 0;
     }
+
+    // Update is called once per frame
+    // void Update()
+    // {
+    //     if(BackFromWord == 1)
+    //     {
+    //         RewardRecorder++;
+    //         if (RewardRecorder == 3)
+    //         {
+    //             RewardRecorder = 0;
+    //             StartCoroutine(RewardAnimation());
+    //         }
+    //     }
+    //
+    //     BackFromWord = 0;
+    // }
 
     public void PlayerGoForward(int StepCount)
     {
@@ -170,10 +181,11 @@ public class GM : MonoBehaviour
         }
         yield return new WaitForSeconds(1f);
         float yBefore = reward.transform.position.y;
+        float zBefore = reward.transform.position.z;
         reward.transform.DOMoveY(yBefore + 20, 1f);
         yield return new WaitForSeconds(1f);
         reward.SetActive(false);
-        reward.transform.position = new Vector3(reward.transform.position.x, yBefore, 0);
+        reward.transform.position = new Vector3(reward.transform.position.x, yBefore, zBefore);
     }
 
 }

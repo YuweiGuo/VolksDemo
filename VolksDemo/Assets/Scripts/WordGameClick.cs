@@ -22,6 +22,7 @@ public class WordGameClick : MonoBehaviour, IPointerClickHandler
                 this.gameObject.SetActive(false);
                 TM.ClickStep = 0;
                 inGM.BackFromWord = 1;
+                inGM.BackFromGame();
                 GameObject.Destroy(this.gameObject);
                 break;
             default:

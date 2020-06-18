@@ -77,9 +77,6 @@ public class TileManager : MonoBehaviour
         if(Type != Tile.TileTypes.TILE_BOMB)
             inGM.LocateCamera();
 
-        if((int)Type == 4 || (int)Type >=11 && (int)Type <=15)
-            inGM.RewardRecorder += 1;
-        
     }
 
     
